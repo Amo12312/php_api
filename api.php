@@ -7,7 +7,7 @@ use MongoDB\Exception\Exception;
 
 header('Content-Type: application/json');
 
-$client = new Client("mongodb://localhost:27017");
+$client = new Client("mongodb://mongodb://mongo:NJcyWgSPSDJDtjERaUyLcVkwyJKHGBdf@mongodb.railway.internal:27017");
 $db = $client->iot_project;
 $collection = $db->rack_wagons;
 $settingsCollection = $db->settings;
